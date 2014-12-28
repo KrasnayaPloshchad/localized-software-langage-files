@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Localization>
-	<Product id="PXCView" version="1.0" productVersion="2.5.0206.0000" order""/>
+	<Product id="PXCView" version="1.0" productVersion="2.5.0311.0000" order""/>
 	<language eName="Chinese (PRC)" lName="简体中文" lcid="0x0804" prefFont="微软雅黑"/>
 	<commands>
 		<item id="80" title="" tooltip="" status="文件(&amp;F)" short=""/>
@@ -230,7 +230,7 @@
 		<item id="33339" title="显示注释和标记工具栏" tooltip="" status="" short=""/>
 		<item id="33340" title="显示注释列表" tooltip="显示/隐藏注释列表" status="显示/隐藏注释列表" short=""/>
 		<item id="33350" title="窗口(&amp;W)" tooltip="" status="" short=""/>
-		<item id="33369" title="显示损坏信息" tooltip="此文档已损坏; 点击此处显示详细信息" status="此文档已损坏; 点击此处显示详细信息" short="损坏信息"/>
+		<item id="33369" title="显示损坏信息" tooltip="已文档已损坏; 点击此处显示详细信息" status="已文档已损坏; 点击此处显示详细信息" short="损坏信息"/>
 		<item id="33370" title="文档选项" tooltip="包括此文档的视图、编辑、管理等选项" status="包括此文档的视图、编辑、管理等选项" short="选项"/>
 		<item id="33371" title="显示层窗格" tooltip="此文档包括层; 按此显示/隐藏层窗格" status="此文档包括层; 按此显示/隐藏层窗格" short="显示层"/>
 		<item id="33372" title="显示字段窗格" tooltip="此文档包括表单; 按此显示/隐藏字段窗格" status="此文档包括表单; 按此显示/隐藏字段窗格" short="显示字段"/>
@@ -404,7 +404,7 @@
 		<item id="36370" title="粘贴(&amp;P)" tooltip="" status="" short=""/>
 		<item id="36371" title="删除(&amp;D)" tooltip="" status="" short=""/>
 		<item id="36372" title="全选(&amp;A)" tooltip="" status="" short=""/>
-		<item id="36373" title="锁定/解锁所有工具栏" tooltip="锁定/解锁所有工具栏" status="锁定/解锁所有工具栏:禁止自定义及更改位置" short="锁定工具栏"/>
+		<item id="36373" title="锁定/解锁所有命令栏" tooltip="锁定/解锁所有命令栏" status="锁定/解锁所有命令栏:禁止自定义及更改位置" short="锁定工具栏"/>
 		<item id="36374" title="重置所有设置到默认值..." tooltip="重置程序的所有设置到默认值..." status="重置程序的所有设置到默认值..." short=""/>
 		<item id="36375" title="从图像文件..." tooltip="从图像文件..." status="从已存在的图像文件创建新的 PDF 文件..." short=""/>
 		<item id="36408" title="从数据文件导入所有设置..." tooltip="从数据文件导入所有程序设置..." status="从外部数据文件导入所有程序设置..." short=""/>
@@ -1110,6 +1110,7 @@
 			<item id="1436" text="使用命名后的目标" tooltip=""/>
 		</dialog>
 		<dialog id="309" text="">
+			<item id="1038" text="已安装的授权密钥" tooltip=""/>
 			<item id="1039" text="姓名(&amp;N):" tooltip=""/>
 			<item id="1041" text="组织名称(&amp;O):" tooltip=""/>
 			<item id="1043" text="Email 地址(&amp;E):" tooltip=""/>
@@ -1117,6 +1118,8 @@
 			<item id="1200" text="注册信息" tooltip=""/>
 			<item id="1274" text="在免费的版本中隐藏受限制的专业功能" tooltip=""/>
 			<item id="1282" text="隐藏广告条" tooltip=""/>
+			<item id="1555" text="移除(&amp;R)" tooltip=""/>
+			<item id="1557" text="添加新序列号" tooltip=""/>
 		</dialog>
 		<dialog id="310" text="">
 			<item id="1038" text="字体(&amp;F):" tooltip=""/>
@@ -1968,7 +1971,7 @@
 			<item id="1387" text="页面数字和页面范围用逗号分隔，例如，输入1，3，5－12" tooltip=""/>
 		</dialog>
 	</dialogs>
-	<strings count="1248">
+	<strings count="1313">
 		<item id="0" text="顺时针转 90 度"/>
 		<item id="1" text="逆时针转 90 度"/>
 		<item id="2" text="180 度"/>
@@ -3217,5 +3220,70 @@
 		<item id="1245" text="证书过期或者无效。"/>
 		<item id="1246" text="证书被取消。"/>
 		<item id="1247" text="时间戳生成失败:&#10;%1数字签名将不含时间戳。"/>
+		<item id="1248" text="附件含有键入表格中的数据。这不是表格本身"/>
+		<item id="1249" text="至少一个必填区域为空。请在继续前填满必填区域"/>
+		<item id="1250" text="用户名"/>
+		<item id="1251" text="电子邮件"/>
+		<item id="1252" text="许可"/>
+		<item id="1253" text="数量：%1"/>
+		<item id="1254" text="密钥信息"/>
+		<item id="1255" text="授权剩余日期"/>
+		<item id="1256" text="过期日期"/>
+		<item id="1257" text="维护周期已过期"/>
+		<item id="1258" text="剩余 %1 天维护周期"/>
+		<item id="1259" text="密钥状态"/>
+		<item id="1260" text="有效"/>
+		<item id="1261" text="已过期"/>
+		<item id="1262" text="已阻止！"/>
+		<item id="1263" text="部分过期"/>
+		<item id="1264" text="更新…"/>
+		<item id="1265" text="您没有已安装的密钥"/>
+		<item id="1266" text="授权密钥"/>
+		<item id="1267" text="您确定移除选中的许可证号吗？&#10;此操作不可撤销。"/>
+		<item id="1268" text="确认移除许可证号。"/>
+		<item id="1269" text="选中的许可证号主体已复制到剪贴板。"/>
+		<item id="1270" text="选中的许可证号的详细描述已复制到剪贴板。"/>
+		<item id="1271" text="添加新许可证号的结果："/>
+		<item id="1272" text="%1 个许可证号成功添加到您的列表。"/>
+		<item id="1273" text="%1 个许可证号成功添加到您的列表。"/>
+		<item id="1274" text="%1 个许可证号由于已存在于您的列表中而被跳过。"/>
+		<item id="1275" text="%1 个许可证号由于已存在于您的列表中而被跳过。"/>
+		<item id="1276" text="%1 个许可证号由于不适用于此产品被过滤。"/>
+		<item id="1277" text="%1 个许可证号由于不适用于此产品被过滤。"/>
+		<item id="1278" text="已跳过 %1 个许可证号因为它不正确"/>
+		<item id="1279" text="已跳过 %1 个许可证号因为它们不正确"/>
+		<item id="1280" text="无法添加新许可证号"/>
+		<item id="1281" text="剪贴板中没有有效的许可证号"/>
+		<item id="1282" text="不正确的激活参数"/>
+		<item id="1283" text="请输入激活码"/>
+		<item id="1284" text="请输入有效的激活码"/>
+		<item id="1285" text="请输入您的e-mail地址。这是激活过程必须的。"/>
+		<item id="1286" text="输入的e-mail地址似乎不正确&#10;&#10;您想用此地址激活吗？"/>
+		<item id="1287" text="注意：如果输入了无效或不存在的e-mail地址，您的许可证号信息将不会被发送。"/>
+		<item id="1288" text="错误"/>
+		<item id="1289" text="&lt;未知&gt;"/>
+		<item id="1290" text="无法应用激活码"/>
+		<item id="1291" text="原因为：&#10;&#10;%1&#10;&#10;您可以访问此&lt;a id=&quot;1&quot;&gt;页面&lt;/a&gt;来人工获取激活码。或者联系&lt;a id=&quot;2&quot;&gt;支持&lt;/a&gt;以获取帮助或访问我们的在线&lt;a id=&quot;3&quot;&gt;知识库&lt;/a&gt;获取更多信息。"/>
+		<item id="1292" text="无法升级您现有的许可证号"/>
+		<item id="1293" text="原因为：&#10;&#10;%1&#10;&#10;您可以访问此&lt;a id=&quot;1&quot;&gt;页面&lt;/a&gt;来人工获取激活码。或者联系&lt;a id=&quot;2&quot;&gt;支持&lt;/a&gt;以获取帮助或访问我们的在线&lt;a id=&quot;3&quot;&gt;知识库&lt;/a&gt;获取更多信息。"/>
+		<item id="1294" text="关闭(&amp;C)"/>
+		<item id="1295" text="是，立即升级！(&amp;Y)"/>
+		<item id="1296" text="现在不，下次启动时询问我(&amp;a)"/>
+		<item id="1297" text="否，并不再提示我(&amp;N)"/>
+		<item id="1298" text="请升级您的许可证号"/>
+		<item id="1299" text="此版本的应用程序需要来自过去的发行版的旧格式的许可证号。此操作可在线完成并自动升级到新格式。&#10;&#10;您现在想要尝试吗？（需要网络连接）&#10;&#10;作为替代您可以访问&lt;a id=&quot;1&quot;&gt;网址&lt;/a&gt;人工升级您的许可证号或者联系&lt;a id=&quot;2&quot;&gt;支持&lt;/a&gt;以获取帮助或访问我们的在线&lt;a id=&quot;3&quot;&gt;知识库&lt;/a&gt;获取更多信息。"/>
+		<item id="1300" text="注意：直到您获得并应用许可证号之前 - 此程序将工作在“免费”或“试用”模式下。感谢您的合作。"/>
+		<item id="1301" text="激活…"/>
+		<item id="1302" text="请输入您的姓名和有效的e-mail地址"/>
+		<item id="1303" text="请确认您的e-mail地址是活动且有效的，因为我们的激活服务器将会向此e-mail地址提供一切未来的更新及许可证号！一旦激活成功您的程序会自动用需要的许可证好升级您的系统"/>
+		<item id="1304" text="您的姓名：(&amp;N)"/>
+		<item id="1305" text="您的电子邮件地址：(&amp;m)"/>
+		<item id="1306" text="激活密钥：(&amp;k)"/>
+		<item id="1307" text="激活(&amp;A)"/>
+		<item id="1308" text="添加新序列号/许可证号"/>
+		<item id="1309" text="请在下面框中输入密钥："/>
+		<item id="1310" text="从剪贴板粘贴密钥"/>
+		<item id="1311" text="继续…"/>
+		<item id="1312" text="您未输入有效的许可证号。"/>
 	</strings>
 </Localization>
