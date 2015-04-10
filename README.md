@@ -7,4 +7,4 @@ localized-software-langage-files
 
 chs.lng是FDM 3.9系列的语言文件，xml是pdfxchange viewer的语言文件，FDM的语言文件有可能需要将字符编码改为GB2312才可正常使用
 
-由于这两个软件本人均已不再使用，故放弃进行更新。
+由于PDFxchange本人均已不再使用，故放弃对其语言文件进行更新。
